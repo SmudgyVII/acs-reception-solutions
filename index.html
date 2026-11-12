@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -20,125 +21,64 @@
 * {box-sizing:border-box}
 html {scroll-behavior:smooth}
 body {
-  margin:0;
-  color:var(--ink);
-  background:#fff;
+  margin:0;color:var(--ink);background:#fff;
   font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-  line-height:1.55;
-  -webkit-font-smoothing:antialiased;
+  line-height:1.55;-webkit-font-smoothing:antialiased;
 }
 a {color:inherit;text-decoration:none}
 .wrap {width:min(var(--max),calc(100% - 64px));margin:0 auto}
 
 .header {
-  min-height:88px;
-  display:flex;
-  align-items:center;
-  background:#fff;
-  border-bottom:1px solid rgba(0,0,0,.06);
-  position:relative;
-  z-index:5;
+  min-height:88px;display:flex;align-items:center;background:#fff;
+  border-bottom:1px solid rgba(0,0,0,.06);position:relative;z-index:5;
 }
-.nav {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:28px;
-}
-.brand {
-  display:flex;
-  align-items:center;
-  gap:15px;
-  flex-shrink:0;
-}
+.nav {display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand {display:flex;align-items:center;gap:15px;flex-shrink:0}
 .brand-mark {
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:47px;
-  line-height:1;
-  letter-spacing:-3px;
+  font-family:Georgia,"Times New Roman",serif;font-size:47px;
+  line-height:1;letter-spacing:-3px;
 }
 .brand-divider {height:42px;width:1px;background:#9b7773}
-.brand-name {
-  font-size:13px;
-  line-height:1.35;
-  letter-spacing:3px;
-  font-weight:600;
-}
-.links {
-  display:flex;
-  align-items:center;
-  gap:36px;
-  font-size:15px;
-}
+.brand-name {font-size:13px;line-height:1.35;letter-spacing:3px;font-weight:600}
+.links {display:flex;align-items:center;gap:30px;font-size:15px}
 .links a {padding:9px 0;border-bottom:1px solid transparent}
 .links a:hover {border-color:var(--rose)}
 
 .btn {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  padding:14px 24px;
-  border-radius:7px;
-  background:var(--rose);
-  color:#fff;
-  font-weight:600;
-  border:1px solid var(--rose);
-  transition:.2s ease;
-  cursor:pointer;
-  font-family:inherit;
-  font-size:inherit;
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:14px 24px;border-radius:7px;background:var(--rose);color:#fff;
+  font-weight:600;border:1px solid var(--rose);transition:.2s ease;
+  cursor:pointer;font-family:inherit;font-size:inherit;
 }
 .btn:hover {
-  background:var(--rose-dark);
-  border-color:var(--rose-dark);
+  background:var(--rose-dark);border-color:var(--rose-dark);
   transform:translateY(-1px);
 }
 .btn-outline {
-  background:transparent;
-  border:1px solid rgba(255,255,255,.9);
-  color:#fff;
+  background:transparent;border:1px solid rgba(255,255,255,.9);color:#fff;
 }
 .btn-outline:hover {background:#fff;color:var(--ink)}
 
 .hero {
-  min-height:570px;
-  display:flex;
-  align-items:center;
-  position:relative;
-  overflow:hidden;
-  background-color:#282522;
+  min-height:570px;display:flex;align-items:center;position:relative;
+  overflow:hidden;background-color:#282522;
   background-image:
     linear-gradient(90deg,rgba(24,22,21,.91) 0%,rgba(24,22,21,.78) 35%,rgba(24,22,21,.12) 72%,rgba(24,22,21,.03) 100%),
     url("acs-salon-hero.jpg");
-  background-size:cover;
-  background-position:center right;
+  background-size:cover;background-position:center right;
 }
-.hero-content {
-  width:min(600px,58%);
-  padding:82px 0 88px;
-  color:#fff;
-}
+.hero-content {width:min(600px,58%);padding:82px 0 88px;color:#fff}
 .eyebrow {
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:13px;
-  font-weight:650;
-  margin:0 0 18px;
+  text-transform:uppercase;letter-spacing:2px;font-size:13px;
+  font-weight:650;margin:0 0 18px;
 }
 h1 {
-  font-size:clamp(42px,5vw,66px);
-  line-height:1.08;
-  letter-spacing:-2.1px;
-  font-weight:600;
-  margin:0 0 22px;
+  font-size:clamp(42px,5vw,66px);line-height:1.08;letter-spacing:-2.1px;
+  font-weight:600;margin:0 0 22px;
 }
 .hero-copy {
-  max-width:520px;
-  color:rgba(255,255,255,.9);
-  font-size:19px;
-  line-height:1.55;
-  margin:0 0 30px;
+  max-width:520px;color:rgba(255,255,255,.9);font-size:19px;
+  line-height:1.55;margin:0 0 30px;
 }
 .actions {display:flex;flex-wrap:wrap;gap:14px}
 
@@ -148,54 +88,27 @@ h1 {
 .feature:first-child {padding-left:0}
 .feature:last-child {border-right:0;padding-right:0}
 .icon {
-  width:54px;
-  height:54px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:#f5e4e3;
-  color:#743f40;
-  margin-bottom:15px;
+  width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  background:#f5e4e3;color:#743f40;margin-bottom:15px;
 }
 .icon svg {
-  width:25px;
-  height:25px;
-  stroke:currentColor;
-  fill:none;
-  stroke-width:1.8;
-  stroke-linecap:round;
-  stroke-linejoin:round;
+  width:25px;height:25px;stroke:currentColor;fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
 }
-h2 {
-  font-size:25px;
-  line-height:1.2;
-  letter-spacing:-.5px;
-  margin:0 0 9px;
-  font-weight:620;
-}
+h2 {font-size:25px;line-height:1.2;letter-spacing:-.5px;margin:0 0 9px;font-weight:620}
 .feature p {margin:0;color:#514b48;font-size:16px;line-height:1.55}
 
 .section {padding:88px 0}
 .section-soft {background:var(--soft)}
-.section-heading {
-  max-width:700px;
-  margin:0 auto 42px;
-  text-align:center;
-}
+.section-heading {max-width:700px;margin:0 auto 42px;text-align:center}
 .section-heading .eyebrow {color:var(--rose-dark);margin-bottom:12px}
-.section-heading h2 {
-  font-size:clamp(30px,4vw,42px);
-  margin-bottom:14px;
-}
+.section-heading h2 {font-size:clamp(30px,4vw,42px);margin-bottom:14px}
 .section-heading p {color:var(--muted);font-size:17px;margin:0}
 
 .service-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .service {
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:28px;
-  box-shadow:0 8px 24px rgba(35,25,20,.035);
+  background:#fff;border:1px solid var(--line);border-radius:10px;
+  padding:28px;box-shadow:0 8px 24px rgba(35,25,20,.035);
 }
 .service .icon {margin-bottom:18px}
 .service h3 {font-size:19px;margin:0 0 8px}
@@ -203,86 +116,55 @@ h2 {
 
 .how-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .step-number {
-  color:var(--rose-dark);
-  font-family:Georgia,serif;
-  font-size:34px;
-  margin-bottom:12px;
+  color:var(--rose-dark);font-family:Georgia,serif;font-size:34px;margin-bottom:12px;
 }
 .step h3 {margin:0 0 8px;font-size:19px}
 .step p {margin:0;color:var(--muted)}
 
-.cta {
-  background:#282422;
-  color:#fff;
-  padding:62px 0;
-  text-align:center;
-}
-.cta h2 {
-  font-size:clamp(30px,4vw,42px);
-  margin-bottom:12px;
-}
+.cta {background:#282422;color:#fff;padding:62px 0;text-align:center}
+.cta h2 {font-size:clamp(30px,4vw,42px);margin-bottom:12px}
 .cta > .wrap > p:not(.eyebrow) {
-  color:rgba(255,255,255,.78);
-  margin:0 auto 24px;
-  max-width:620px;
+  color:rgba(255,255,255,.78);margin:0 auto 24px;max-width:620px;
 }
+
+/* Demo booking section */
+.demo-booking {
+  background:#fff;color:var(--ink);padding:38px 24px;
+  border-radius:12px;max-width:760px;margin:30px auto 0;
+  box-shadow:0 12px 34px rgba(0,0,0,.12);
+}
+.demo-booking p {color:var(--muted);margin:0 auto 20px}
+.demo-booking .btn {min-width:230px}
 
 /* Contact form */
 .contact-form {
-  max-width:760px;
-  margin:34px auto 0;
-  padding:30px;
-  text-align:left;
-  background:#fff;
-  color:var(--ink);
-  border-radius:12px;
+  max-width:760px;margin:34px auto 0;padding:30px;text-align:left;
+  background:#fff;color:var(--ink);border-radius:12px;
   box-shadow:0 12px 34px rgba(0,0,0,.12);
 }
-.form-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:17px;
-}
+.form-grid {display:grid;grid-template-columns:1fr 1fr;gap:17px}
 .field {display:flex;flex-direction:column;gap:7px}
 .field-full {grid-column:1/-1}
 .field label {font-size:13px;font-weight:650;color:#3e3836}
 .field input,.field textarea {
-  width:100%;
-  border:1px solid #ddd5d2;
-  border-radius:6px;
-  padding:13px 14px;
-  font:inherit;
-  color:var(--ink);
-  background:#fff;
+  width:100%;border:1px solid #ddd5d2;border-radius:6px;
+  padding:13px 14px;font:inherit;color:var(--ink);background:#fff;
 }
 .field input:focus,.field textarea:focus {
-  outline:2px solid rgba(193,127,125,.35);
-  border-color:var(--rose);
+  outline:2px solid rgba(193,127,125,.35);border-color:var(--rose);
 }
 .field textarea {min-height:115px;resize:vertical}
 .consent {
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  margin:18px 0;
-  color:var(--muted);
-  font-size:13px;
+  display:flex;align-items:flex-start;gap:10px;margin:18px 0;
+  color:var(--muted);font-size:13px;
 }
 .consent input {margin-top:4px;accent-color:var(--rose)}
-.form-note {
-  color:var(--muted);
-  font-size:12px;
-  margin:12px 0 0;
-}
+.form-note {color:var(--muted);font-size:12px;margin:12px 0 0}
 
 .footer {padding:28px 0;border-top:1px solid var(--line)}
 .footer-inner {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  color:var(--muted);
-  font-size:13px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;color:var(--muted);font-size:13px;
 }
 .footer-brand {color:var(--ink);letter-spacing:2px;font-weight:650}
 
@@ -291,11 +173,7 @@ h2 {
   .header {height:auto;padding:17px 0}
   .nav {flex-wrap:wrap;gap:15px}
   .links {
-    order:3;
-    width:100%;
-    justify-content:space-between;
-    gap:12px;
-    font-size:13px;
+    order:3;width:100%;justify-content:space-between;gap:12px;font-size:13px;
   }
   .brand-mark {font-size:39px}
   .brand-name {font-size:11px;letter-spacing:2px}
@@ -321,17 +199,12 @@ h2 {
   .brand-name {font-size:9px;letter-spacing:1.6px}
   .nav>.btn {font-size:12px;padding:10px 11px}
   .links {
-    overflow-x:auto;
-    justify-content:flex-start;
-    gap:23px;
-    white-space:nowrap;
-    padding-bottom:2px;
+    overflow-x:auto;justify-content:flex-start;gap:23px;
+    white-space:nowrap;padding-bottom:2px;
   }
   .hero {min-height:570px;background-position:61% center}
   .hero:before {
-    content:"";
-    position:absolute;
-    inset:0;
+    content:"";position:absolute;inset:0;
     background:linear-gradient(90deg,rgba(22,20,19,.88),rgba(22,20,19,.53) 78%,rgba(22,20,19,.2));
   }
   .hero-content {position:relative;width:100%;padding:72px 0}
@@ -369,7 +242,9 @@ h2 {
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="btn" href="#contact">Book a Free Demo</a>
+    <a class="btn" href="https://calendly.com/mitchcooper113/acs-free-ai-receptionist-demo" target="_blank" rel="noopener">
+      Book a Free Demo
+    </a>
   </div>
 </header>
 
@@ -385,7 +260,9 @@ h2 {
         helps manage appointment requests and supports your clients 24/7.
       </p>
       <div class="actions">
-        <a class="btn" href="#contact">Book a Free Demo →</a>
+        <a class="btn" href="https://calendly.com/mitchcooper113/acs-free-ai-receptionist-demo" target="_blank" rel="noopener">
+          Book a Free Demo →
+        </a>
         <a class="btn btn-outline" href="#services">Our Services</a>
       </div>
     </div>
@@ -455,7 +332,6 @@ h2 {
 
 <section class="section" id="services">
   <div class="wrap">
-
     <div class="section-heading">
       <p class="eyebrow">What we can help with</p>
       <h2>Reception support that fits around your salon</h2>
@@ -502,7 +378,6 @@ h2 {
 
 <section class="section section-soft" id="how-it-works">
   <div class="wrap">
-
     <div class="section-heading">
       <p class="eyebrow">Simple to get started</p>
       <h2>How it works</h2>
@@ -510,7 +385,6 @@ h2 {
     </div>
 
     <div class="how-grid">
-
       <article class="step">
         <div class="step-number">01</div>
         <h3>We learn about your salon</h3>
@@ -528,25 +402,69 @@ h2 {
         <h3>Your callers get support</h3>
         <p>The receptionist answers calls and follows the agreed booking or enquiry process.</p>
       </article>
-
     </div>
   </div>
 </section>
 
+<!-- FREE DEMO BOOKING -->
+<section class="cta" id="demo">
+  <div class="wrap">
+    <p class="eyebrow">Take the next step</p>
+    <h2>See your AI receptionist in action.</h2>
+    <p>
+      Book a free 15-minute demonstration. Choose a time that suits you
+      and tell us a little about your salon before we meet.
+    </p>
+
+    <div class="demo-booking">
+      <p>
+        Your free demonstration will be arranged through our online
+        booking calendar. You'll be able to choose an available date and time.
+      </p>
+      <a class="btn"
+         href="https://calendly.com/mitchcooper113/acs-free-ai-receptionist-demo"
+         target="_blank"
+         rel="noopener">
+        Choose Your Demo Time →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
 <section class="cta" id="contact">
   <div class="wrap">
 
     <p class="eyebrow">ACS Reception Solutions</p>
-    <h2>See how it could work for your salon.</h2>
-    <p>Get in touch to discuss a demonstration of an AI receptionist configured for a beauty or nail salon.</p>
- 
-    <form class="contact-form" action="https://formsubmit.co/mitchcooper113@gmail.com" method="POST">
+    <h2>Have a question?</h2>
+    <p>
+      If you'd rather get in touch first, send us an enquiry using the
+      form below and we'll get back to you.
+    </p>
+
+    <form class="contact-form"
+          action="https://formsubmit.co/mitchcooper113@gmail.com"
+          method="POST">
 
       <input type="hidden" name="_subject" value="New ACS Reception Solutions website enquiry">
       <input type="hidden" name="_template" value="table">
-     <input type="hidden" name="_next" value="https://smudgyvii.github.io/acs-reception-solutions/thanks.html">
+      <input type="hidden" name="_next" value="https://smudgyvii.github.io/acs-reception-solutions/thanks.html">
 
-<input type="hidden" name="_autoresponse" value="Thank you for your enquiry!&#10;&#10;Hi,&#10;&#10;Thank you for contacting ACS Reception Solutions.&#10;&#10;We have successfully received your enquiry and will be in touch as soon as possible.&#10;&#10;Kind regards,&#10;&#10;ACS Reception Solutions">
+      <input type="hidden" name="_autoresponse" value="Thank you for your enquiry!
+
+Hi,
+
+Thank you for contacting ACS Reception Solutions.
+
+We've successfully received your enquiry and appreciate your interest in our AI-powered reception services.
+
+We'll review your message and aim to get back to you within one business day.
+
+If you've requested a free demonstration, we'll be in touch to discuss a suitable time.
+
+Kind regards,
+ACS Reception Solutions">
+
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
       <div class="form-grid">
@@ -579,7 +497,7 @@ h2 {
       </div>
 
       <label class="consent">
-        <input type="checkbox" required>
+        <input type="checkbox" name="consent" value="Agreed" required>
         <span>I agree that ACS Reception Solutions can use these details to respond to my enquiry. *</span>
       </label>
 
@@ -590,10 +508,7 @@ h2 {
         Your details will be used to respond to this enquiry.
       </p>
 
-<input type="hidden" name="_autoresponse" value="Thank you for your enquiry!&#10;&#10;Hi,&#10;&#10;Thank you for contacting ACS Reception Solutions.&#10;&#10;We've successfully received your enquiry and appreciate your interest in our AI-powered reception services.&#10;&#10;We'll review your message and aim to get back to you within one business day.&#10;&#10;If you've requested a free demonstration, we'll be in touch to discuss a suitable time.&#10;&#10;We look forward to speaking with you.&#10;&#10;Kind regards,&#10;&#10;ACS Reception Solutions">
-
     </form>
-   
   </div>
 </section>
 
@@ -613,4 +528,3 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 </body>
 </html>
-
